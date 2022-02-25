@@ -1,0 +1,33 @@
+.MyButton {
+  padding: 5px 20px;
+  border: none;
+
+  background-color: rgba(0,0,0,.2);
+  backdrop-filter: blur(2px);
+
+  font-style: italic;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+
+  transition: all 0.2s ease-out;
+
+
+  &:hover {
+    background-color: white;
+    color: black;
+
+    animation: glitch 0.05s ease-out;
+    animation-iteration-count: 1;
+
+  }
+}
+
+@keyframes glitch {
+  15% {transform: translateX(5px);}
+  30% {transform: translateX(-5px);}
+  50% {transform: translateX(3px);}
+  65% {transform: translateX(-3px);}
+  80% {transform: translateX(2px);}
+  100% {transform: translateX(0);}
+}

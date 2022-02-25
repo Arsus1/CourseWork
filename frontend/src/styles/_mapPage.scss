@@ -1,0 +1,22 @@
+.map-page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../images/map.jpeg") center center;
+  background-size: cover;
+
+  .dot {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+  }
+
+  .dot:hover {
+    transform: scale(1.2);
+  }
+}

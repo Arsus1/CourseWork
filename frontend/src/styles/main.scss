@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Lalezar';
+  src: url('../fonts/Lalezar-Regular.ttf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html, body {
+  height: 100%;
+  font-family: Lalezar, sans-serif;
+}
+
+body {
+  background:url("../images/garageX4.jpg");
+  background-size: cover;
+  //overflow: hidden;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: Lalezar, sans-serif;
+}
+
+
+@import "header";
+@import "selectPage";
+@import "selectCard";
+@import "mapPage";
+@import "modal";

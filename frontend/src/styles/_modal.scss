@@ -1,0 +1,98 @@
+.modal {
+  background: rgba(0,0,0,.3);
+  position: absolute;
+  z-index: 11;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    width: 40%;
+    min-height: 50%;
+    background: rgba(white, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    max-height: 90%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+
+    .main-title {
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      font-style: italic;
+    }
+
+    .titles {
+      display: flex;
+      justify-content: space-around;
+
+      font-style: italic;
+      font-weight: 900;
+      margin-bottom: 15px;
+
+      div {
+        padding: 5px 40px;
+        background: white;
+        font-size: 26px;
+      }
+
+      div:first-child {
+        background: black;
+        color: white;
+      }
+    }
+
+    .list {
+      flex-grow: 1;
+    }
+
+    .list-item {
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid white;
+      color: white;
+      font-size: 24px;
+      font-weight: 300;
+      padding: 5px;
+      cursor: pointer;
+
+      div {
+        width: 300px;
+        text-align: center;
+      }
+    }
+
+    .list-item:last-child {
+      border:none
+    }
+
+    .list-item.active {
+      background: white;
+      color: black;
+    }
+
+    .bet {
+      min-height: 60px;
+      color: white;
+      font-size: 25px;
+      padding: 5px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .bet-input {
+      max-width: 20%;
+      padding: 10px 15px;
+      outline: none;
+      border: none;
+      font-size: 20px;
+    }
+  }
+}

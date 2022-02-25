@@ -1,0 +1,28 @@
+$progress-color: #9457eb;
+$bar-radius: 60px;
+$bar-bg: rgba(0,0,0,0.075);
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.title {
+  padding: 5px;
+  width: 30%;
+  flex-basis: 120px;
+}
+
+.bar {
+  background: rgba(black, .4);
+  flex-grow: 1;
+}
+
+.progress {
+  height: 15px;
+  background: $progress-color;
+  color: #fff;
+  padding: 5px;
+}
+
